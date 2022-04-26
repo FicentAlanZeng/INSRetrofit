@@ -137,7 +137,6 @@ Swift网络库，用法如下：
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files = "Source/*.framework"
   # spec.source_files  = "Classes", "Classes/**/*.{h,m}"
   # spec.exclude_files = "Classes/Exclude"
 
@@ -163,7 +162,7 @@ Swift网络库，用法如下：
   #  Link your library with frameworks, or libraries. Libraries do not include
   #  the lib prefix of their name.
   #
-
+  spec.vendored_frameworks = "Source/*.framework"
   spec.frameworks = "UIKit", "Foundation"
   # spec.framework  = "SomeFramework"
   # spec.frameworks = "SomeFramework", "AnotherFramework"
