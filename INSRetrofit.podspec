@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "INSRetrofit"
-  spec.version      = "1.0.0"
+  spec.version      = "1.1.0"
   spec.summary      = "Network Manager By Swift."
 
   # This description is used to generate tags and improve search results.
@@ -112,7 +112,7 @@ Swift网络库，用法如下：
   spec.platform     = :ios, "12.0"
   
   spec.swift_versions = "5.0"
-
+  spec.pod_target_xcconfig = { 'VALID_ARCHS' => 'x86_64 armv7 armv7s arm64' }
   #  When using multiple platforms
   # spec.ios.deployment_target = "5.0"
   # spec.osx.deployment_target = "10.7"
