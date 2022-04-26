@@ -126,7 +126,7 @@ Swift网络库，用法如下：
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://github.com/FicentAlanZeng/INSRetrofit.git", :tag => "#{spec.version}" }
+  spec.source       = { :git => "https://github.com/FicentAlanZeng/INSRetrofit.git", :tag => "v#{spec.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
