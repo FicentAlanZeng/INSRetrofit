@@ -1,0 +1,11 @@
+framework module INSRetrofit_Framework {
+  umbrella header "INSRetrofit_Framework.h"
+
+  export *
+  module * { export * }
+}
+
+module INSRetrofit_Framework.Swift {
+    header "INSRetrofit_Framework-Swift.h"
+    requires objc
+}
