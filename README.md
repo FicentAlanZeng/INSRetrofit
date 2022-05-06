@@ -166,11 +166,13 @@ class LoginService: INS_ApiCourseService {
 
 class Test {
     class func test(_ disposeBag: DisposeBag? = nil) {
+    //初始化
         let ret = INS_RetrofitUtil.initWithKey("12345678", baseURL: URL.init(string: "https://uat-jk.jlflove.com")!, enableLog: true, parseEngine: nil)
 //        let ret = INS_RetrofitUtil.initWithKey("12345678", baseURL: URL.init(string: "https://uat-jk.jlflove.com")!)
         if !ret {
             return
         }
+//        单个请求
 //        let req1 = INS_RetrofitUtil
 //            .create(serviceClass: LoginService.self)
 //            .loginRequest([:])
@@ -215,13 +217,7 @@ class Test {
            
         }
         
-        ///多个请求串发，需要返回结果一致，待封装  同一个接口调用多次可能用到，比如上传9张图片，每次上传一张
-        ///类似Observable<PlainResult>.concat(AnySequence(all)).subscribeOn(MainScheduler.asyncInstance).subscribe
-        
-        
-        ///并发多个接口，结果都回来以后再统一处理逻辑，比如用户是否在对方的
-        
-        
+        //图片上传
     }
 }
 
